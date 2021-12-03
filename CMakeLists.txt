@@ -211,8 +211,7 @@ include_directories(${PCL_INCLUDE_DIRS})
 link_directories(${PCL_LIBRARY_DIRS})
 add_definitions(${PCL_DEFINITIONS})
 
-add_executable(sub src/sub.cpp)
-target_link_libraries(sub ${catkin_LIBRARIES} ${PCL_LIBRARIES})
-
-add_executable(dualvis src/dualvis.cpp)
-target_link_libraries(dualvis ${catkin_LIBRARIES} ${PCL_LIBRARIES})
+add_executable(raw src/raw.cpp)
+add_executable(processed src/processed.cpp)
+target_link_libraries(raw ${catkin_LIBRARIES} ${PCL_LIBRARIES})
+target_link_libraries(processed ${catkin_LIBRARIES} ${PCL_LIBRARIES})
