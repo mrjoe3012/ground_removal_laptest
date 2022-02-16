@@ -1,5 +1,3 @@
-// TODO Remove stdout prints.
-
 #include <iostream>
 #include <cmath>
 #include <vector>
@@ -133,12 +131,12 @@ namespace ground_removal
 	
 	const AlgorithmParameters DEFAULT_ALGORITHM_PARAMETERS = 
 	{
-		.tM = 1.0f,
-		.tMSmall = 1.0f,
-		.tB = 5.0f,
-		.tRMSE = 0.005f,
+		.tM = 0.1f,
+		.tMSmall = 0.125f,
+		.tB = 0.25f,
+		.tRMSE = 0.02f,
 		.tDPrev = 0.25f,
-		.tDGround = 0.1f, 
+		.tDGround = 0.06f, 
 	};	
 
 	// end of constants
